@@ -1,0 +1,31 @@
+body {
+  height: 100vh;
+  margin: 0;
+  background-color: blueviolet;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator {
+  height: 80vh;
+  width: 400px;
+  background: rgb(71, 70, 71);
+  border: 0.5em solid rgb(51, 50, 51);
+  border-radius: 20px;
+}
+
+.display {
+  height: 15%;
+  width: 90%;
+  background-color: rgb(57, 57, 57);
+  margin: 2em auto;
+  border-radius: 15px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+
+}
