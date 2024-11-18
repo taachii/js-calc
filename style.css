@@ -1,31 +1,82 @@
 body {
   height: 100vh;
   margin: 0;
-  background-color: blueviolet;
+  background-color: rgb(124, 55, 188);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  box-sizing: border-box;
+  
 }
 
 .calculator {
-  height: 80vh;
+  height: 600px;
   width: 400px;
   background: rgb(71, 70, 71);
-  border: 0.5em solid rgb(51, 50, 51);
+  border: 8px solid rgb(50, 50, 50);
   border-radius: 20px;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .display {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 4em;
   height: 15%;
   width: 90%;
-  background-color: rgb(57, 57, 57);
-  margin: 2em auto;
+  color: rgb(50, 50, 50);
+  background-color: rgb(122, 122, 122);
+  margin: 24px auto;
+  padding: 0 12px;
+  border: 8px solid rgb(50, 50, 50);
   border-radius: 15px;
+  display: flex;     
+  justify-content: flex-end; 
+  align-items: center;    
 }
 
 .buttons {
-  display: flex;
-  flex-direction: column;
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.35em;
+}
 
+button {
+  font-family: 'Roboto Mono', monospace;
+  background-color: rgb(99, 99, 99);
+  height: 65px;
+  min-width: 30px;
+  border: none;
+  border-radius: 10px;
+  color: rgb(241, 241, 241);
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: rgb(108, 108, 108);
+}
+
+button.digit:hover {
+  background-color: rgb(49, 149, 99);
+}
+
+.digit {
+  background-color: rgb(54, 164, 109);
+}
+
+.zero {
+  grid-column: span 2;
+}
+
+.operator,
+.function,
+.decimal {
+  background-color: rgb(122, 122, 122);
 }
