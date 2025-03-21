@@ -63,11 +63,11 @@ button:hover {
   background-color: rgb(108, 108, 108);
 }
 
-button.digit:hover {
+button.printable:hover {
   background-color: rgb(49, 149, 99);
 }
 
-.digit {
+.printable {
   background-color: rgb(54, 164, 109);
 }
 
@@ -76,7 +76,10 @@ button.digit:hover {
 }
 
 .operator,
-.function,
-.decimal {
+.function {
   background-color: rgb(122, 122, 122);
+}
+
+.toprow {
+  background-color: rgb(99, 99, 99);
 }
